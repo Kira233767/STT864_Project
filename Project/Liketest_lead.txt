@@ -1,0 +1,4 @@
+                       Df    AIC    BIC  logLik deviance  Chisq Chi Df Pr(>Chisq)    
+water.model.lead_NULL   2 1013.8 1024.7 -504.89  1009.77                             
+water.model.lead_cross 16 1002.5 1089.6 -485.27   970.53 39.243     14  0.0003345 ***
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1

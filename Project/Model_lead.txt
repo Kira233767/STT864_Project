@@ -1,0 +1,27 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace Approximation) ['glmerMod']
+ Family: binomial  ( logit )
+Formula: Result_Lead_.PPB. ~ Service_Line_Material + Zip_Code + (1 | Sample_Location)
+   Data: Sub_data_lead
+
+     AIC      BIC   logLik deviance df.resid 
+   878.1    920.5   -431.0    862.1     1469 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-0.5960 -0.3314 -0.3246 -0.2162  7.1629 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ Sample_Location (Intercept) 3.853    1.963   
+Number of obs: 1477, groups:  Sample_Location, 3
+
+Fixed effects:
+                                Estimate Std. Error z value Pr(>|z|)   
+(Intercept)                     -0.69160    1.45348  -0.476  0.63420   
+Service_Line_MaterialGalvanized  0.04114    0.22507   0.183  0.85496   
+Service_Line_MaterialLead        0.61384    0.30522   2.011  0.04431 * 
+Zip_Code48504                    0.02000    0.21509   0.093  0.92593   
+Zip_Code48505                   -0.81276    0.30591  -2.657  0.00789 **
+Zip_Code48506                   -0.51828    0.41325  -1.254  0.20978   
+Zip_Code48507                   -1.68760    0.51456  -3.280  0.00104 **
+---

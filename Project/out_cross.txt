@@ -1,0 +1,37 @@
+Generalized linear mixed model fit by maximum likelihood (Laplace
+  Approximation) [glmerMod]
+ Family: binomial  ( logit )
+Formula: Result_Lead_.PPB. ~ Service_Line_Material + Zip_Code + Zip_Code *  
+    Service_Line_Material + (1 | Sample_Location)
+   Data: Sub_data_lead
+
+     AIC      BIC   logLik deviance df.resid 
+  1002.5   1089.6   -485.3    970.5     1692 
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-0.7128 -0.3507 -0.3097 -0.1809  6.0604 
+
+Random effects:
+ Groups          Name        Variance Std.Dev.
+ Sample_Location (Intercept) 2.897    1.702   
+Number of obs: 1708, groups:  Sample_Location, 3
+
+Fixed effects:
+                                              Estimate Std. Error z value   Pr(>|z|)
+(Intercept)                                    -0.9790     1.3693  -0.715   0.47463 
+Service_Line_MaterialGalvanized                -0.1184     0.3135  -0.378   0.70561  
+Service_Line_MaterialLead                       1.1079     0.3964   2.795   0.00519 **
+Zip_Code48504                                   0.2486     0.2420   1.027   0.30431
+Zip_Code48505                                  -1.0754     0.3945  -2.726   0.00641 **
+Zip_Code48506                                  -0.6378     0.4857  -1.313   0.18912 
+Zip_Code48507                                  -1.2592     0.5695  -2.211   0.02703 *
+Service_Line_MaterialGalvanized:Zip_Code48504  -0.4174     0.5579  -0.748   0.45441 
+Service_Line_MaterialLead:Zip_Code48504        -0.7829     0.5700  -1.373   0.16963 
+Service_Line_MaterialGalvanized:Zip_Code48505   1.2825     0.6065   2.114   0.03448 * 
+Service_Line_MaterialLead:Zip_Code48505       -15.1236    22.2166  -0.681   0.49604   
+Service_Line_MaterialGalvanized:Zip_Code48506   0.8844     0.8262   1.070   0.28440   
+Service_Line_MaterialLead:Zip_Code48506       -14.9597    54.1737  -0.276   0.78244   
+Service_Line_MaterialGalvanized:Zip_Code48507 -12.1535    54.0971  -0.225   0.82224   
+Service_Line_MaterialLead:Zip_Code48507        -1.0689     0.9839  -1.086   0.27729 
+                                                 
